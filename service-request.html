@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>طلب خدمة - المحور للاستشارات</title>
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  integrity="sha512-3P5P8vF+lR42qS7BV5QxR9Yh4dAfOiyJjKdfH5pL6JZ1zZLxj5YhF3IRRrJk98vU+F8QvUq8BbJcL2Lw/Ov1Cg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   <!-- NAVBAR -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <!-- ضع هنا صورة الشعار إن أردت -->
+        <div class="logo-mark">Motivera</div>
+        <div class="logo-text">المحور للاستشارات</div>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <ul class="nav-list">
+          <!-- <li><a href="index.html">الرئيسية</a></li> -->
+          <li><a href="about.html">من نحن</a></li>
+          <li><a href="services.html">خدماتنا</a></li>
+          <li><a href="projects.html">مشاريعنا</a></li>
+          <li><a href="Knowledge Center.html">مركز المعرفة</a></li>
+          <li><a href="careers.html">انضم لفريقنا</a></li>
+          <li><a href="contact.html">تواصل معنا</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Search -->
+        <button class="icon-btn" id="searchBtn" aria-label="بحث">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <!-- CTA -->
+        <a href="service-request.html" class="btn btn-cta">طلب الخدمة</a>
+
+        <!-- Mobile toggle -->
+        <button class="icon-btn mobile-toggle" id="mobileToggle" aria-label="قائمة">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Search overlay / popup -->
+    <div class="search-overlay" id="searchOverlay" aria-hidden="true">
+      <div class="search-box">
+        <form id="searchForm">
+          <input type="search" id="q" name="q" placeholder="ابحث عن مقال أو خدمة..." aria-label="بحث" />
+          <button type="submit" class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <button type="button" class="btn icon-close" id="closeSearch" aria-label="إغلاق"><i class="fa-solid fa-xmark"></i></button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Mobile menu (slide) -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <div class="mobile-menu-inner">
+        <button class="icon-btn mobile-close" id="mobileClose" aria-label="إغلاق"><i class="fa-solid fa-xmark"></i></button>
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="about.html">من نحن</a></li>
+          <li><a href="services.html">خدماتنا</a></li>
+          <li><a href="projects.html">مشاريعنا</a></li>
+          <li><a href="Knowledge Center.html">مركز المعرفة</a></li>
+          <li><a href="careers.html">انضم لفريقنا</a></li>
+          <li><a href="contact.html">تواصل معنا</a></li>
+        </ul>
+        <div class="mobile-cta">
+          <a href="service-request.html" class="btn btn-cta">طلب الخدمة</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Form -->
+  <div class="req-wrapper">
+    <h1>طلب خدمة</h1>
+    <p class="subtitle">املأ النموذج أدناه لتحديد احتياجاتك وسنتواصل معك في أقرب وقت.</p>
+
+    <form id="serviceForm">
+      <div>
+        <label for="name">الاسم الكامل</label>
+        <input type="text" id="name" name="name" required placeholder="اكتب اسمك هنا">
+      </div>
+
+      <div>
+        <label for="phone">رقم الهاتف</label>
+        <input type="tel" id="phone" name="phone" required placeholder="05xxxxxxxx">
+      </div>
+
+      <div>
+        <label for="email">البريد الإلكتروني</label>
+        <input type="email" id="email" name="email" required placeholder="example@email.com">
+      </div>
+
+      <div>
+        <label for="company">اسم الشركة (اختياري)</label>
+        <input type="text" id="company" name="company" placeholder="اسم الشركة أو الجهة">
+      </div>
+
+      <div>
+        <label for="service">نوع الخدمة المطلوبة</label>
+        <select id="service" name="service" required>
+          <option value="">اختر الخدمة</option>
+          <option>الاستشارات الإدارية</option>
+          <option> تواظيف</option>
+          <option>التدريب والتطوير</option>
+          <option>تحليل الوظائف</option>
+          <option>إعداد الهياكل التنظيمية</option>
+          <option>خدمات الموارد البشرية الأخرى</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="employees">عدد الموظفين (اختياري)</label>
+        <input type="number" id="employees" name="employees" placeholder="مثلاً: 50">
+      </div>
+
+      <div>
+        <label for="date">تاريخ التنفيذ المطلوب</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+
+      <div>
+        <label for="notes">ملاحظات إضافية</label>
+        <textarea id="notes" name="notes" placeholder="اكتب أي تفاصيل إضافية..."></textarea>
+      </div>
+
+      <button type="submit" class="btn-submit">إرسال الطلب</button>
+    </form>
+  </div>
+
+ <!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-contact-container">
+    <div class="footer-about">
+      <h4>المحور للاستشارات</h4>
+      <p>حلول استشارية متكاملة في الموارد البشرية.</p>
+    </div>
+
+    <div class="footer-links-section">
+      <h5>روابط سريعة</h5>
+      <ul class="footer-links">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="services.html">خدماتنا</a></li>
+        <li><a href="projects.html">مشاريعنا</a></li>
+        <li><a href="contact.html">تواصل معنا</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social-section">
+      <h5>تواصل معنا</h5>
+      <p><a href="mailto:info@example.com" class="footer-mail">info@example.com</a></p>
+      <p>+966 5X XXX XXXX</p>
+
+      <div class="footer-social">
+        <a href="https://linkedin.com" target="_blank" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://x.com" target="_blank" title="X">
+          <i class="fab fa-x-twitter"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" title="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="mailto:info@example.com" title="Gmail">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-copy">
+    © 2025 المحور للاستشارات
+  </div>
+</footer>
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>

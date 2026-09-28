@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>من نحن | Motivera HR</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="main.js"></script>
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  integrity="sha512-3P5P8vF+lR42qS7BV5QxR9Yh4dAfOiyJjKdfH5pL6JZ1zZLxj5YhF3IRRrJk98vU+F8QvUq8BbJcL2Lw/Ov1Cg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+   <!-- NAVBAR -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <!-- ضع هنا صورة الشعار إن أردت -->
+        <div class="logo-mark">Motivera</div>
+        <div class="logo-text">المحور للاستشارات</div>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <ul class="nav-list">
+          <!-- <li><a href="index.html">الرئيسية</a></li> -->
+          <li><a href="about.html">من نحن</a></li>
+          <li><a href="services.html">خدماتنا</a></li>
+          <li><a href="projects.html">مشاريعنا</a></li>
+          <li><a href="knowledge.html">مركز المعرفة</a></li>
+          <li><a href="careers.html">انضم لفريقنا</a></li>
+          <li><a href="contact.html">تواصل معنا</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Search -->
+        <button class="icon-btn" id="searchBtn" aria-label="بحث">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <!-- CTA -->
+        <a href="service-request.html" class="btn btn-cta">طلب الخدمة</a>
+
+        <!-- Mobile toggle -->
+        <button class="icon-btn mobile-toggle" id="mobileToggle" aria-label="قائمة">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Search overlay / popup -->
+    <div class="search-overlay" id="searchOverlay" aria-hidden="true">
+      <div class="search-box">
+        <form id="searchForm">
+          <input type="search" id="q" name="q" placeholder="ابحث عن مقال أو خدمة..." aria-label="بحث" />
+          <button type="submit" class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <button type="button" class="btn icon-close" id="closeSearch" aria-label="إغلاق"><i class="fa-solid fa-xmark"></i></button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Mobile menu (slide) -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <div class="mobile-menu-inner">
+        <button class="icon-btn mobile-close" id="mobileClose" aria-label="إغلاق"><i class="fa-solid fa-xmark"></i></button>
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="about.html">من نحن</a></li>
+          <li><a href="services.html">خدماتنا</a></li>
+          <li><a href="projects.html">مشاريعنا</a></li>
+          <li><a href="Knowledge Center.html">مركز المعرفة</a></li>
+          <li><a href="careers.html">انضم لفريقنا</a></li>
+          <li><a href="contact.html">تواصل معنا</a></li>
+        </ul>
+        <div class="mobile-cta">
+          <a href="service-request.html" class="btn btn-cta">طلب الخدمة</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- 🟦 Hero Section -->
+  <section class="about-hero fade-in">
+    <div class="hero-content">
+      <h1>من نحن</h1>
+      <p>نحن شركة Motivera للاستشارات الإدارية والموارد البشرية، نساعد المؤسسات على بناء بيئة عمل فعّالة ومتميزة.</p>
+    </div>
+  </section>
+
+  <!-- 🟨 نبذة عن الشركة -->
+  <section class="about-section fade-in">
+    <div class="container about-flex">
+      <div class="about-text">
+        <h2>نبذة عن Motivera</h2>
+        <p>تأسست Motivera لتكون شريك النجاح للمؤسسات في تطوير قدراتها البشرية والإدارية. نؤمن أن الاستثمار في الإنسان هو الطريق لتحقيق التميز المؤسسي المستدام، لذلك نقدم حلولاً مبتكرة تجمع بين المعرفة والخبرة.</p>
+      </div>
+      <div class="about-img">
+        <img src="https://via.placeholder.com/500x350" alt="About Motivera">
+      </div>
+    </div>
+  </section>
+
+  <!-- 🟩 الرؤية والرسالة -->
+  <section class="vision-mission fade-in">
+    <div class="container grid-2">
+      <div class="card vision">
+        <i class="fa-solid fa-eye"></i>
+        <h3>رؤيتنا</h3>
+        <p>أن نكون الخيار الأول في تمكين وتطوير رأس المال البشري في المنطقة العربية.</p>
+      </div>
+      <div class="card mission">
+        <i class="fa-solid fa-bullseye"></i>
+        <h3>رسالتنا</h3>
+        <p>نقدم خدمات واستشارات تسهم في بناء بيئات عمل صحية وفعّالة تعتمد على المعرفة والابتكار.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🟧 قيمنا -->
+  <section class="values fade-in">
+    <div class="container">
+      <h2>قيمنا الأساسية</h2>
+      <div class="values-grid">
+        <div class="value-card">
+          <i class="fa-solid fa-handshake"></i>
+          <h4>المصداقية</h4>
+          <p>نعمل بشفافية تامة في كل تعاملاتنا.</p>
+        </div>
+        <div class="value-card">
+          <i class="fa-solid fa-lightbulb"></i>
+          <h4>الابتكار</h4>
+          <p>نبحث دائمًا عن حلول جديدة ومبدعة لتحديات العملاء.</p>
+        </div>
+        <div class="value-card">
+          <i class="fa-solid fa-users"></i>
+          <h4>العمل الجماعي</h4>
+          <p>نؤمن بقوة التعاون وروح الفريق لتحقيق الأهداف.</p>
+        </div>
+        <div class="value-card">
+          <i class="fa-solid fa-award"></i>
+          <h4>التميز</h4>
+          <p>نطمح لتقديم أعلى معايير الجودة في كل مشروع.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🟪 فريق العمل -->
+  <section class="team fade-in">
+    <div class="container">
+      <h2>فريق العمل</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/200x200" alt="Team Member">
+          <h4>أحمد العلي</h4>
+          <p>المدير التنفيذي</p>
+        </div>
+        <div class="team-member">
+          <img src="https://via.placeholder.com/200x200" alt="Team Member">
+          <h4>سارة محمود</h4>
+          <p>مديرة الموارد البشرية</p>
+        </div>
+        <div class="team-member">
+          <img src="https://via.placeholder.com/200x200" alt="Team Member">
+          <h4>خالد عمر</h4>
+          <p>استشاري تطوير إداري</p>
+        </div>
+        <div class="team-member">
+          <img src="https://via.placeholder.com/200x200" alt="Team Member">
+          <h4>ريم الحارثي</h4>
+          <p>محللة مشاريع</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-contact-container">
+    <div class="footer-about">
+      <h4>المحور للاستشارات</h4>
+      <p>حلول استشارية متكاملة في الموارد البشرية.</p>
+    </div>
+
+    <div class="footer-links-section">
+      <h5>روابط سريعة</h5>
+      <ul class="footer-links">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="services.html">خدماتنا</a></li>
+        <li><a href="projects.html">مشاريعنا</a></li>
+        <li><a href="contact.html">تواصل معنا</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social-section">
+      <h5>تواصل معنا</h5>
+      <p><a href="mailto:info@example.com" class="footer-mail">info@example.com</a></p>
+      <p>+966 5X XXX XXXX</p>
+
+      <div class="footer-social">
+        <a href="https://linkedin.com" target="_blank" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://x.com" target="_blank" title="X">
+          <i class="fab fa-x-twitter"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" title="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="mailto:info@example.com" title="Gmail">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-copy">
+    © 2025 المحور للاستشارات
+  </div>
+</footer>
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<script src="js/main.js"></script>
+</body>
+</html>

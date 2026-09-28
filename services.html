@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>خدماتنا | المحور للاستشارات</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+      <!-- NAVBAR -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <!-- ضع هنا صورة الشعار إن أردت -->
+        <div class="logo-mark">Motivera</div>
+        <div class="logo-text">المحور للاستشارات</div>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <ul class="nav-list">
+          <!-- <li><a href="index.html">الرئيسية</a></li> -->
+          <li><a href="about.html">من نحن</a></li>
+          <li><a href="services.html">خدماتنا</a></li>
+          <li><a href="projects.html">مشاريعنا</a></li>
+          <li><a href="Knowledge Center.html">مركز المعرفة</a></li>
+          <li><a href="careers.html">انضم لفريقنا</a></li>
+          <li><a href="contact.html">تواصل معنا</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Search -->
+        <button class="icon-btn" id="searchBtn" aria-label="بحث">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <!-- CTA -->
+        <a href="service-request.html" class="btn btn-cta">طلب الخدمة</a>
+
+        <!-- Mobile toggle -->
+        <button class="icon-btn mobile-toggle" id="mobileToggle" aria-label="قائمة">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Search overlay / popup -->
+    <div class="search-overlay" id="searchOverlay" aria-hidden="true">
+      <div class="search-box">
+        <form id="searchForm">
+          <input type="search" id="q" name="q" placeholder="ابحث عن مقال أو خدمة..." aria-label="بحث" />
+          <button type="submit" class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <button type="button" class="btn icon-close" id="closeSearch" aria-label="إغلاق"><i class="fa-solid fa-xmark"></i></button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Mobile menu (slide) -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <div class="mobile-menu-inner">
+        <button class="icon-btn mobile-close" id="mobileClose" aria-label="إغلاق"><i class="fa-solid fa-xmark"></i></button>
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="about.html">من نحن</a></li>
+          <li><a href="services.html">خدماتنا</a></li>
+          <li><a href="projects.html">مشاريعنا</a></li>
+          <li><a href="Knowledge Center.html">مركز المعرفة</a></li>
+          <li><a href="careers.html">انضم لفريقنا</a></li>
+          <li><a href="contact.html">تواصل معنا</a></li>
+        </ul>
+        <div class="mobile-cta">
+          <a href="service-request.html" class="btn btn-cta">طلب الخدمة</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- 🟦 Hero Section -->
+  <section class="hero services-hero">
+    <div class="container hero-inner">
+      <h1>خدماتنا</h1>
+      <p>نقدّم حلولاً استشارية متكاملة في تطوير رأس المال البشري، الإدارة، والتخطيط المؤسسي لتحقيق التميز والفعالية.</p>
+    </div>
+  </section>
+
+  <!-- 🟩 قسم الخدمات -->
+  <section class="services-section container">
+    <h2>مجالات خدماتنا</h2>
+    <div class="cards">
+
+      <article class="card">
+        <i class="fa-solid fa-user-gear fa-2x"></i>
+        <h3>الاستشارات الإدارية</h3>
+        <p>نساعد المؤسسات في تحسين كفاءة الأداء التنظيمي ووضع الهياكل والسياسات التي تضمن استدامة النجاح.</p>
+      </article>
+
+      <article class="card">
+        <i class="fa-solid fa-users-line fa-2x"></i>
+        <h3>إدارة الموارد البشرية</h3>
+        <p>تصميم أنظمة متكاملة للتوظيف، تقييم الأداء، التدريب، وتخطيط المسار الوظيفي.</p>
+      </article>
+
+      <article class="card">
+        <i class="fa-solid fa-chart-pie fa-2x"></i>
+        <h3>التحليل المؤسسي</h3>
+        <p>تحليل الوضع الحالي للمؤسسة، وتقديم التوصيات التي تدعم اتخاذ القرارات الاستراتيجية الفعالة.</p>
+      </article>
+
+      <article class="card">
+        <i class="fa-solid fa-person-chalkboard fa-2x"></i>
+        <h3>التدريب والتطوير</h3>
+        <p>إعداد وتنفيذ برامج تدريبية حديثة تواكب احتياجات سوق العمل ومتطلبات النمو المؤسسي.</p>
+      </article>
+
+      <article class="card">
+        <i class="fa-solid fa-handshake fa-2x"></i>
+        <h3>الاستشارات القانونية والحوكمة</h3>
+        <p>تقديم الدعم في بناء اللوائح الداخلية وتطبيق معايير الحوكمة لتحقيق الشفافية والمساءلة.</p>
+      </article>
+
+      <article class="card">
+        <i class="fa-solid fa-lightbulb fa-2x"></i>
+        <h3>الابتكار المؤسسي</h3>
+        <p>بناء ثقافة الابتكار داخل المؤسسات لتعزيز الإبداع وتحفيز الفرق على التطوير المستمر.</p>
+      </article>
+
+    </div>
+
+    <!-- 🟢 زر إضافة خدمة -->
+    <div style="text-align: center; margin-top: 40px;">
+      <a href="add-service.html" class="btn btn-cta" style="background-color: #005f73; color: #fff; padding: 12px 30px; border-radius: 8px; font-weight: 600; transition: 0.3s;">
+        <i class="fa-solid fa-plus"></i> إضافة خدمة جديدة
+      </a>
+    </div>
+  </section>
+
+  <!-- 🟨 CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>هل تبحث عن تطوير مؤسستك؟</h2>
+      <p>فريقنا جاهز لتقديم حلول متكاملة مصممة خصيصًا لاحتياجاتك.</p>
+      <a href="contact.html" class="btn btn-cta">تواصل معنا الآن</a>
+    </div>
+  </section>
+
+  <!-- 🔻 Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <h4>المحور للاستشارات</h4>
+        <p>نقدّم حلولاً مهنية تساهم في تطوير الأفراد والمنظمات لتحقيق النجاح المستدام.</p>
+      </div>
+
+      <div>
+        <h5>روابط سريعة</h5>
+        <ul class="footer-links">
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="services.html">خدماتنا</a></li>
+          <li><a href="projects.html">مشاريعنا</a></li>
+          <li><a href="contact.html">تواصل معنا</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h5>تواصل معنا</h5>
+        <p>info@example.com</p>
+        <p>+966 5X XXX XXXX</p>
+      </div>
+    </div>
+    <div class="copyright">
+      © 2025 المحور للاستشارات. جميع الحقوق محفوظة.
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
